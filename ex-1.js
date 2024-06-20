@@ -13,4 +13,10 @@ let additionalProperties = {
 
 // Start coding here
 
+function combineStudentProfile (studentProfile, additionalProperties) {
+  return {...studentProfile, ...additionalProperties}
+}
+
+let newStudentProfile =combineStudentProfile(studentProfile, additionalProperties)
+
 console.log(newStudentProfile);

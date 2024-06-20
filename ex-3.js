@@ -11,4 +11,9 @@ let additionalOrders = [
 
 // Start coding here
 
+function combineOrder (oreders, additionalOrders) {
+      return [...orders,...additionalOrders]
+}
+
+let newOrders = combineOrder(orders, additionalOrders)
 console.log(newOrders);
