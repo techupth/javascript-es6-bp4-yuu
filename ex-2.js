@@ -14,4 +14,14 @@ let studentScores = {
 
 // Start coding here
 
+function combineScore (studentProfile) {
+  let {name, age, scores} = studentProfile
+  scores = {...studentProfile.scores,...studentScores}
+  return {name, age, scores}
+}
+
+let newStudentProfile = combineScore(studentProfile)
+
 console.log(newStudentProfile);
+
+
